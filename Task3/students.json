@@ -1,0 +1,27 @@
+[
+  {
+    "Id": 1,
+    "Name": "Ілля",
+    "AverageGrade": 91.5
+  },
+  {
+    "Id": 2,
+    "Name": "Артем",
+    "AverageGrade": 87
+  },
+  {
+    "Id": 3,
+    "Name": "Олександр",
+    "AverageGrade": 96.2
+  },
+  {
+    "Id": 4,
+    "Name": "Данило",
+    "AverageGrade": 83.7
+  },
+  {
+    "Id": 5,
+    "Name": "Ярослав",
+    "AverageGrade": 94.8
+  }
+]
