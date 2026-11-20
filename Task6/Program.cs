@@ -8,20 +8,17 @@ using System.Text.Unicode;
 
 class Program
 {
-    // Список книг
     static List<Book> books = new List<Book>();
 
-    // Назва JSON-файлу
     static string filePath = "books.json";
 
     static void Main()
     {
-        // Завантаження книг із файлу
         LoadBooks();
 
         while (true)
         {
-            Console.WriteLine("\n========== КАТАЛОГ КНИГ ==========");
+            Console.WriteLine("\nКАТАЛОГ КНИГ");
             Console.WriteLine("1. Додати книгу");
             Console.WriteLine("2. Знайти книгу");
             Console.WriteLine("3. Видалити книгу");
@@ -65,7 +62,6 @@ class Program
         }
     }
 
-    // Додавання книги
     static void AddBook()
     {
         Console.Write("Введіть назву книги: ");
@@ -106,7 +102,6 @@ class Program
         Console.WriteLine("Книгу успішно додано!");
     }
 
-    // Пошук книги
     static void SearchBook()
     {
         Console.Write("Введіть назву книги для пошуку: ");
@@ -137,7 +132,6 @@ class Program
         }
     }
 
-    // Видалення книги
     static void DeleteBook()
     {
         Console.Write("Введіть ID книги для видалення: ");
@@ -161,7 +155,6 @@ class Program
         }
     }
 
-    // Виведення всіх книг
     static void ShowBooks()
     {
         if (books.Count == 0)
@@ -179,7 +172,6 @@ class Program
         }
     }
 
-    // Збереження книг у JSON
     static void SaveBooks()
     {
         try
@@ -209,7 +201,6 @@ class Program
         }
     }
 
-    // Завантаження книг із JSON
     static void LoadBooks()
     {
         if (!File.Exists(filePath))
@@ -242,7 +233,6 @@ class Program
     }
 }
 
-// Клас книги
 public class Book
 {
     public int Id { get; set; }
